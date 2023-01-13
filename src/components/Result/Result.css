@@ -1,0 +1,40 @@
+.Result {
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  width: 90%;
+  /* width: 400px; */
+  /* left: 1000px;
+  top: 40px; */
+  background: #ffffff;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  flex-direction: column;
+}
+.person-img {
+  max-width: 336px;
+  object-fit: contain;
+}
+.box-result {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box-result p:nth-child(2) {
+  color: #343a40;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  max-width: 336px;
+}
+.box-result p:nth-child(3) {
+  color: #495057;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 336px;
+}
