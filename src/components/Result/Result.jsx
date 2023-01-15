@@ -6,7 +6,9 @@ function Result() {
   return (
     <div className="box-result">
       <div className="Result">
-        <img src={person} className="person-img" alt="logo" />
+        <div className="box-image">
+          <img src={person} className="person-img" alt="logo" />
+        </div>
         <p>Ningún mensaje fue encontrado</p>
         <p>Ingresa el texto que desees encriptar o desencriptar.</p>
       </div>

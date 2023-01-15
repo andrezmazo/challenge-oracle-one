@@ -23,16 +23,22 @@ html {
   background-color: bisque;
 }
 .input-text {
-  position: absolute;
-  width: 577px;
-  height: 48px;
-  left: 240px;
-  top: 168px;
+  /* position: absolute; */
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  /* width: 600px; */
+  height: 40vh  ;
+  justify-content: center;
+  /* left: 240px; */
+  /* top: 168px; */
+  top: 15vh;
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
   color: #0a3871;
   background: none;
+  initial-letter: initial;
   border: none;
 }
 .exclamation {
@@ -43,45 +49,75 @@ html {
   top: 0%;
   bottom: 0%;
 }
-.box-input {
+.box-section {
   display: flex;
-  flex-grow: 5;
+  /* max-width: 800px; */
+  flex-grow: 4;
+  /* justify-content: center; */
+  align-items: center;
   flex-direction: column;
+  position: relative;
+}
+.box-input{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100vh;
+  width: 600px;
+  max-width: calc(100% - 20px);
 }
 .box-main {
   display: flex;
 }
 .box-warning {
-  position: absolute;
+  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  top: 600px;
-  left: 200px;
+  top: 24vh;
+  /* left: 200px; */
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: #495057;
   opacity: 0.8;
-  flex: none;
   order: 1;
-  flex-grow: 0;
 }
-.box-button{
+.box-buttons{
   display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  top: 35vh;
+  min-width: 100%;
+
 }
-/* .primary-button {
+.primary-button {
+  width: 298px;
   background: #0a3871;
   border-radius: 24px;
-  width: 328px;
+  border: none;
   height: 67px;
   color: #FFFFFF;
-  top: 640px;
-  left: 200px;
-  position: absolute;
-} */
-.secondary-button {
+  margin-right: 20px;
 }
+.secondary-button {
+  width: 298px;
+  background: #D8DFE8;
+  border-radius: 24px;
+  border-color: #0A3871;
+  border: 2px #0A3871 solid; 
+
+  height: 67px;
+  color: #0A3871
+}
+
+
+
+
+/* .secondary-button {
+} */
 
 /* img.exclamation{
   position: relative;
@@ -103,9 +139,9 @@ html {
   color: white;
 } */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
-}
+} */
 /* 
 @keyframes App-logo-spin {
   from {
