@@ -3,8 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95vh;
-  width: 90%;
+  height: 97vh;
+  max-width: 95%;
   /* width: 400px; */
   /* left: 1000px;
   top: 40px; */
@@ -13,8 +13,15 @@
   border-radius: 32px;
   flex-direction: column;
 }
+.box-image{
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  object-fit: contain;
+}
 .person-img {
-  max-width: 336px;
+  max-width: 290px;
   object-fit: contain;
 }
 .box-result {
