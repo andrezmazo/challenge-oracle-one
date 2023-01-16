@@ -36,6 +36,7 @@ html {
   background: none;
   initial-letter: initial;
   border: none;
+  word-wrap: break-word !important;
 }
 .exclamation {
   height: 16px;

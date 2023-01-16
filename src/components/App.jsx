@@ -76,7 +76,7 @@ function App() {
         <div className="box-section">
           <div className="box-input">
             <input
-              type="text"
+              type="textarea"
               className="input-text"
               onChange={onSearch}
               placeholder="ingrese texto aquí"
