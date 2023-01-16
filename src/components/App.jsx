@@ -7,7 +7,7 @@ import Result from "./Result/Result.jsx";
 function App() {
   var inputText = "";
   var textSend =""
-  var prueba =""
+
 
   const [isShown, setIsShown]= useState (true)
   const [setPropText,setNewText] = useState('')

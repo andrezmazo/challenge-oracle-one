@@ -23,15 +23,11 @@ html {
   background-color: bisque;
 }
 .input-text {
-  /* position: absolute; */
   position: relative;
   display: flex;
   text-decoration: none;
-  /* width: 600px; */
   height: 40vh  ;
   justify-content: center;
-  /* left: 240px; */
-  /* top: 168px; */
   top: 15vh;
   font-weight: 400;
   font-size: 32px;
@@ -42,7 +38,6 @@ html {
   border: none;
 }
 .exclamation {
-  /* position: absolute; */
   height: 16px;
   left: 0%;
   right: 0%;
@@ -51,9 +46,7 @@ html {
 }
 .box-section {
   display: flex;
-  /* max-width: 800px; */
   flex-grow: 4;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   position: relative;
@@ -62,20 +55,22 @@ html {
   display: flex;
   position: relative;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 100vh;
   width: 600px;
   max-width: calc(100% - 20px);
 }
 .box-main {
   display: flex;
+  flex-direction: row;
 }
 .box-warning {
   position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-top: 7px;
   top: 24vh;
   /* left: 200px; */
   font-weight: 400;
@@ -113,41 +108,17 @@ html {
   color: #0A3871
 }
 
-
-
-
-/* .secondary-button {
-} */
-
-/* img.exclamation{
-  position: relative;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 959px) {
+  .box-main { flex-direction: column;
   }
-} */
-
-/* .App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-/* .App-link {
-  color: #61dafb;
-} */
-/* 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .box-input{ height: 68vh;
+  padding-right: none !important;}
+  .input-text{
+    height: 43vh;
   }
-  to {
-    transform: rotate(360deg);
+  .box-warning{
+    top: 6vh
   }
-} */
+  .box-buttons{top: 17vh;}
+
+}
