@@ -23,15 +23,11 @@ html {
   background-color: bisque;
 }
 .input-text {
-  /* position: absolute; */
   position: relative;
   display: flex;
   text-decoration: none;
-  /* width: 600px; */
-  height: 40vh  ;
+  height: 40vh;
   justify-content: center;
-  /* left: 240px; */
-  /* top: 168px; */
   top: 15vh;
   font-weight: 400;
   font-size: 32px;
@@ -42,7 +38,6 @@ html {
   border: none;
 }
 .exclamation {
-  /* position: absolute; */
   height: 16px;
   left: 0%;
   right: 0%;
@@ -51,31 +46,31 @@ html {
 }
 .box-section {
   display: flex;
-  /* max-width: 800px; */
   flex-grow: 4;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   position: relative;
 }
-.box-input{
+.box-input {
   display: flex;
   position: relative;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 100vh;
   width: 600px;
   max-width: calc(100% - 20px);
 }
 .box-main {
   display: flex;
+  flex-direction: row;
 }
 .box-warning {
   position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-top: 7px;
   top: 24vh;
   /* left: 200px; */
   font-weight: 400;
@@ -85,13 +80,12 @@ html {
   opacity: 0.8;
   order: 1;
 }
-.box-buttons{
+.box-buttons {
   display: flex;
   position: relative;
   justify-content: space-evenly;
   top: 35vh;
   min-width: 100%;
-
 }
 .primary-button {
   width: 298px;
@@ -99,55 +93,58 @@ html {
   border-radius: 24px;
   border: none;
   height: 67px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-right: 20px;
 }
 .secondary-button {
   width: 298px;
-  background: #D8DFE8;
+  background: #d8dfe8;
   border-radius: 24px;
-  border-color: #0A3871;
-  border: 2px #0A3871 solid; 
+  border-color: #0a3871;
+  border: 2px #0a3871 solid;
 
   height: 67px;
-  color: #0A3871
+  color: #0a3871;
 }
 
-
-
-
-/* .secondary-button {
-} */
-
-/* img.exclamation{
-  position: relative;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 959px) {
+  .box-main {
+    flex-direction: column;
   }
-} */
-
-/* .App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-/* .App-link {
-  color: #61dafb;
-} */
-/* 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .box-input {
+    height: 68vh;
+    padding-right: none !important;
   }
-  to {
-    transform: rotate(360deg);
+  .input-text {
+    height: 43vh;
   }
-} */
+  .box-warning {
+    top: 6vh;
+  }
+  .box-buttons {
+    top: 17vh;
+    flex-direction: row;
+  }
+  .primary-button {
+    margin-right: 20px;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .box-buttons {
+    top: 9vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .primary-button {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .input-text {
+    top: 7vh;
+  }
+  .box-warning {
+    top: -10vh;
+  }
+}
