@@ -1,7 +1,7 @@
 
-## CHALLENGE ORACLE ONE 
+# CHALLENGE ORACLE ONE 
 
-# Realizado por Andrés Zapata
+### Realizado por Andrés Zapata
 
 
 This project was bootstrapped with [Create React App].
