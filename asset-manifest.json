@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/challenge-oracle-one/static/css/main.131400f2.css",
+    "main.js": "/challenge-oracle-one/static/js/main.939ff7b7.js",
+    "static/media/person.png": "/challenge-oracle-one/static/media/person.8abe8f224ff5333bf885.png",
+    "static/media/logo.png": "/challenge-oracle-one/static/media/logo.a0ad9b39757869ae0846.png",
+    "static/media/exclamation.png": "/challenge-oracle-one/static/media/exclamation.35006095a9fa31b724bf.png",
+    "index.html": "/challenge-oracle-one/index.html",
+    "main.131400f2.css.map": "/challenge-oracle-one/static/css/main.131400f2.css.map",
+    "main.939ff7b7.js.map": "/challenge-oracle-one/static/js/main.939ff7b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.131400f2.css",
+    "static/js/main.939ff7b7.js"
+  ]
+}
